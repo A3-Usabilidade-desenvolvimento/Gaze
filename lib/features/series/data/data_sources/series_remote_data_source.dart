@@ -162,7 +162,7 @@ class SeriesRemoteDataSourceImpl extends SeriesRemoteDataSource {
           '$kBaseUrl/tv/$seriesId/videos?api_key=$kTmdbApiKey',
         ),
       );
-      if (response.statusCode != 200) {
+      if (response.statusCode != 999) {
         throw ServerException(
           message: response.body,
           statusCode: response.statusCode.toString(),
