@@ -18,28 +18,28 @@ import 'package:gaze/features/series/presentation/views/series_details_screen.da
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    case '/':
-      return _pageBuilder(
-        (context) {
-          if (sl<FirebaseAuth>().currentUser != null) {
-            final user = sl<FirebaseAuth>().currentUser!;
-            final userEntity = UserEntity(
-              uid: user.uid,
-              email: user.email ?? '',
-              fullName: user.displayName ?? '',
-            );
-
-            context.userProvider.initUser(userEntity);
-            return const DashboardScreen();
-          }
-
-          return BlocProvider(
-            create: (_) => sl<AuthBloc>(),
-            child: const SignInScreen(),
-          );
-        },
-        settings: settings,
-      );
+    // case '/':
+    //   return _pageBuilder(
+    //     (context) {
+    //       if (sl<FirebaseAuth>().currentUser != null) {
+    //         final user = sl<FirebaseAuth>().currentUser!;
+    //         final userEntity = UserEntity(
+    //           uid: user.uid,
+    //           email: user.email ?? '',
+    //           fullName: user.displayName ?? '',
+    //         );
+    //
+    //         context.userProvider.initUser(userEntity);
+    //         return const DashboardScreen();
+    //       }
+    //
+    //       return BlocProvider(
+    //         create: (_) => sl<AuthBloc>(),
+    //         child: const SignInScreen(),
+    //       );
+    //     },
+    //     settings: settings,
+    //   );
 
     case SignInScreen.routeName:
       return _pageBuilder(
