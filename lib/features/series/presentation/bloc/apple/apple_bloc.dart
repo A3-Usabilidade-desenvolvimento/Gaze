@@ -29,7 +29,7 @@ class AppleBloc extends Bloc<AppleEvent, AppleState> {
 
     result.fold(
       (failure) => emit(const ErrorAppleSeries()),
-      (data) => emit(LoadedAppleSeries(appleList: data)),
+      (data) => emit(LoadedAppleSeries(appleList: [])),
     );
   }
 }
