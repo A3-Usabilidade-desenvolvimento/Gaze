@@ -1,5 +1,5 @@
 # Gaze
-O Gaze é um aplicativo que utiliza a TMDB API para obter acesso aos dados necessários. Através dele, é possível visualizar as series que estão em alta em cada plataforma de streaming assim como pesquisar por serie e por gêneros específicos. A intenção por trás do desenvolvimento do Gaze foi a de colocar em prática pela primeira vez o Framework Flutter além de também implementar pela primeira vez o Firebase em um aplicativo. 
+O Gaze é um aplicativo que utiliza a TMDB API para obter acesso aos dados necessários. Através dele, é possível visualizar as series que estão em alta em cada plataforma de streaming assim como pesquisar por serie e por gêneros específicos. O desenvolvimento do Gaze coloca em prática o Framework Flutter e implementa o Firebase. 
 
 # Índice 
 * [Layouts do Projeto](#layouts-do-projeto)
@@ -77,7 +77,7 @@ Na Profile Screen, o usuário tem acesso a todos os seus dados, incluindo a list
 ![profile](https://github.com/gabrielbmmaia/gaze/assets/109977155/e73c50ec-e0e9-4992-81aa-ee92e82e9a8a)
 
 # Api
-[https://unsplash.com/documentation](https://developer.themoviedb.org/reference/intro/getting-started) ( utilizada 20/09/2023 )
+[https://unsplash.com/documentation](https://developer.themoviedb.org/reference/intro/getting-started)
 
 # Abrir e rodar o projeto
 
@@ -94,7 +94,3 @@ tasks, você pode executar o App.
 <div align="center">
  <video src=https://github.com/gabrielbmmaia/gaze/assets/109977155/5402cb60-b5f8-44b1-a3a2-820072afee5f width=800/>
 <div/>
-
-
-
-

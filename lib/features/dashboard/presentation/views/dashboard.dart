@@ -30,7 +30,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<UserEntity>(
-      stream: DashboardUtils.userDataStream,
+      stream: Stream.empty(),
       builder: (_, snapshot) {
         if (snapshot.hasData) {
           context.read<UserProvider>().user = snapshot.data;
