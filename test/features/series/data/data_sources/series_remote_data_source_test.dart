@@ -6,11 +6,11 @@ import 'package:test/test.dart';
 class MockClient extends Mock implements http.Client {}
 
 void main() {
-  late http.Client client;
+  late http.Client cliente;
   late SeriesRemoteDataSource remoteDataSource;
 
   setUp(() {
-    client = MockClient();
+    cliente = MockClient();
     remoteDataSource = SeriesRemoteDataSourceImpl();
     registerFallbackValue(Uri());
   });
